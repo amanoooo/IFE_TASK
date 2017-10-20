@@ -1,0 +1,151 @@
+.container{
+	padding: 0 2%;
+	text-align: center;
+	width: auto;
+}
+table{
+	text-align: left;
+	margin: 0 auto;
+}
+.hot td{
+	color: red;
+}
+th{
+	color: white;
+}
+tr:nth-child(odd){
+	background-color: gray;
+}
+tr:nth-child(even){
+	background-color: #cc9;
+}
+tr:nth-child(1){
+	background-color: black;
+}
+.lg{
+	transition: all 0.3s;
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.lg:focus {
+	width: 500px;
+    margin: auto;
+    border: 1px solid rgba(3,169,244,.8);
+    box-shadow: 0 0 10px rgba(3,169,244,.5);
+}
+.lg:HOVER{ 
+border-color:rgba(141,39,142,.75); 
+-webkit-box-shadow:0 0 18px rgba(111,1,32,3); 
+
+} 
+.flex-con{
+	height: 190px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 80%;
+	margin: 0 auto;
+	padding:2px;
+}
+.flex-item{
+	background-color: gray;
+	width: 40px;
+	height: 40px;
+	margin: 2px;
+	font-size: 2em;
+	color: white;
+	text-decoration:none;	/*下划线*/
+}
+.css3-con{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;	/* Firefox */
+	-webkit-box-sizing:border-box;	/* Safari */
+	width: 80%;	margin: 0 auto;
+	overflow: auto;
+}
+.css3-box{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;	/* Firefox */
+	-webkit-box-sizing:border-box;	/* Safari */
+	width:50%;	height: 190px;
+	float:left;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
+.a{
+	text-decoration:none;	/*下划线*/
+	margin-bottom: 0px;
+	display: inline-block;
+	background-color: gray;
+	width: 40px;
+	height: 40px;
+	font-size: 2em;
+}
+.aa{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.item:not(target) {
+    animation: slideOutLeft 2s forwards;
+}
+
+.item:target {
+    animation: slideInRight 2s forwards;
+}
+.slide{
+    border: 1px solid #6e6e6e;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+#d1 {
+    background-color: red;
+}
+
+#d2 {
+    background-color: green;
+}
+
+#d3 {
+    background-color: yellow;
+}
+.item {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@keyframes slideInRight {
+    from {
+        left: 400px;
+        top: 0;
+    }
+    to {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        left: 0;
+        top: 0;
+    }
+    to {
+        left: -400px;
+        top: 0;
+    }
+}
