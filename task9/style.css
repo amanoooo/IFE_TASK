@@ -1,0 +1,66 @@
+
+.flex-item {
+    background: tomato;
+    padding: 20px;
+    width: 150px;
+    margin-top: 10px;
+
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+
+}
+/*等价于:last-child*/
+.flex-item:nth-last-child(1){
+    background:#cf0;
+}
+#d1{
+    height: 120px;
+}
+#d2{
+    height: 100px;
+}
+#d3{
+    height: 40px;
+}
+#d4{
+    height: 200px;
+}
+@media screen and (min-width: 641px) {
+
+    .flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction and if we allow the items to wrap 
+    * Remember this is the same as:
+    * flex-direction: row; 伸缩流方向
+    * flex-wrap: wrap;  伸缩行不换行nowrap
+    */
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    align-items: center;
+}
+}
+@media screen  and (max-width: 640px){
+    .flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction and if we allow the items to wrap 
+    * Remember this is the same as:
+    * flex-direction: row; 伸缩流方向
+    * flex-wrap: wrap;  伸缩行不换行nowrap
+    */
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    align-items: flex-start;
+}
+    #d4{
+       order: -1;
+    }
+}

@@ -1,0 +1,40 @@
+.content{ height:300px; border:1px solid #999; margin:0 auto} 
+legend{
+	color: green;
+}
+.col-12 {
+width: 90%;
+}
+.col-11 {
+width: 90%;
+}
+.col-10 {
+width: 90%;
+}
+.col-9 {
+width: 90%;
+}
+.col-8 {
+width: 90%;
+}
+.col-7 {
+width: 90%;
+}
+.col-6 {
+width: 90%;
+}
+.col-5 {
+width: 40%;
+}
+.col-4 {
+width: 40%;
+}
+.col-3 {
+width: 40%;
+}
+.col-2 {
+width: 40%;
+}
+.col-1 {
+width: 40%;
+}
